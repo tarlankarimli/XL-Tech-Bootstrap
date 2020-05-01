@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+}
+.navbar {
+    background-color: rgba(21, 31, 33, 0.5) ;
+}
+.navbar span {
+    color: #fff;
+}
+.navbar .navbar-nav a{
+    color: #d1d1d1;
+}
+.navbar .navbar-nav a:hover{
+    color: #fff;
+}
+.header {
+    background: url('/img/stars-bg.png') center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
