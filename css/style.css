@@ -1,21 +1,96 @@
 body {
     height: 100vh;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 .navbar {
-    background-color: rgba(21, 31, 33, 0.5) ;
+    background-color: rgba(21, 31, 33, 0.5);
+    border-bottom: 1px solid #d1d1d1;
 }
 .navbar span {
     color: #fff;
 }
 .navbar .navbar-nav a{
     color: #d1d1d1;
+    text-transform: uppercase;
 }
 .navbar .navbar-nav a:hover{
     color: #fff;
 }
-.header {
+#header {
     background: url('/img/stars-bg.png') center;
+    background-size: cover;
     height: 100%;
     display: flex;
     align-items: center;
+}
+#header .container {
+    color: #fff;
+}
+.header-right {
+    background-color: rgba(21, 31, 33, 0.5);
+    border-radius: 15px;
+    padding: 2rem;
+}
+#header h2 {
+    margin-top: 1rem;
+}
+#header .fa-chevron-down {
+    color: #fff;
+    margin-top: 3rem;
+}
+#header .fa-chevron-down:hover {
+    color: #d1d1d1;
+}
+
+#connect, #customer {
+    padding: 5rem 0;
+}
+#connect .fab {
+    border: 2px solid rgb(155, 36, 36);
+    border-radius: 18px;
+    color: rgb(155, 36, 36);
+    height: 60px;
+    font-size: 1.5rem;
+    padding: 15px;
+    width: 60px;
+    text-align: center;
+    margin-top: 10px;
+}
+#connect .fab:hover {
+    color: #fff;
+    background: rgb(155, 36, 36);
+    transition: 0.5s ease-out;
+}
+#who, #why {
+    background: #d1d1d13a;
+    padding: 5rem 0;
+}
+#who .btn {
+    width: 50%;
+}
+#who .btn:hover {
+    background: #fff;
+    color: rgb(155, 36, 36);
+}
+#work {
+    padding: 5rem 0;
+}
+#work .card {
+    margin-bottom: 15px;
+}
+#why .fa, .far, .fas {
+    color: rgb(155, 36, 36);
+    margin: 20px 0;
+}
+
+@media(max-width: 768px) {
+    #header, #connect, #who {
+        text-align: center;
+    }
+    hr {
+        width: 100%;
+    }
+    #work h2,p {
+        text-align: center;
+    }
 }
