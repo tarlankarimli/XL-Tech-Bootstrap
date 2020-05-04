@@ -2,6 +2,9 @@ body {
     height: 100vh;
     font-family: 'Alegreya Sans', sans-serif;
 }
+a {    
+    text-decoration: none !important;
+}
 .navbar {
     background-color: rgba(21, 31, 33, 0.5);
     border-bottom: 1px solid #d1d1d1;
@@ -41,10 +44,6 @@ body {
 #header .fa-chevron-down:hover {
     color: #d1d1d1;
 }
-
-#connect, #customer {
-    padding: 5rem 0;
-}
 #connect .fab {
     border: 2px solid rgb(155, 36, 36);
     border-radius: 18px;
@@ -61,8 +60,11 @@ body {
     background: rgb(155, 36, 36);
     transition: 0.5s ease-out;
 }
-#who, #why {
+#who, #why, #pricing {
     background: #d1d1d13a;
+    padding: 5rem 0;
+}
+#connect, #customer, #contact {
     padding: 5rem 0;
 }
 #who .btn {
@@ -82,7 +84,35 @@ body {
     color: rgb(155, 36, 36);
     margin: 20px 0;
 }
-
+#customer .carousel-indicators {
+    top: 5rem;
+}
+#customer .carousel-indicators li {
+    background-color: rgb(155, 36, 36);
+}
+#pricing .card-header {
+    background-color: rgba(21, 31, 33, 0.8);
+    color: #fff;
+}
+#pricing .card-header {
+    background-color: rgb(155, 36, 36);
+}
+footer {
+    background-color: #484848;
+    color: #fff;
+    padding: 1.5rem 0;
+}
+footer .fab {
+   font-size: 1.2rem;
+   margin-right: .8rem;
+}
+footer .fas, .far {
+    color: #fff;
+    margin-right: 10px;
+}
+footer .list-inline a{
+    color: #fff;
+}
 @media(max-width: 768px) {
     #header, #connect, #who {
         text-align: center;
