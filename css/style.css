@@ -5,6 +5,7 @@ body {
 a {    
     text-decoration: none !important;
 }
+/* Navbar */
 .navbar {
     background-color: rgba(21, 31, 33, 0.5);
     border-bottom: 1px solid #d1d1d1;
@@ -19,6 +20,7 @@ a {
 .navbar .navbar-nav a:hover{
     color: #fff;
 }
+/* Header */
 #header {
     background: url('/img/stars-bg.png') center;
     background-size: cover;
@@ -44,6 +46,7 @@ a {
 #header .fa-chevron-down:hover {
     color: #d1d1d1;
 }
+/* Connect */
 #connect .fab {
     border: 2px solid rgb(155, 36, 36);
     border-radius: 18px;
@@ -60,6 +63,7 @@ a {
     background: rgb(155, 36, 36);
     transition: 0.5s ease-out;
 }
+/* Who */
 #who, #why, #pricing {
     background: #d1d1d13a;
     padding: 5rem 0;
@@ -74,22 +78,45 @@ a {
     background: #fff;
     color: rgb(155, 36, 36);
 }
+/* Work */
 #work {
     padding: 5rem 0;
 }
 #work .card {
     margin-bottom: 15px;
 }
+#work .card-img {
+    position: relative;
+
+}
+#work .layout-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/img/eye.png') center no-repeat;
+    opacity: 0;
+}
+#work .layout-img:hover {
+    opacity: 1;
+    transition: .3s ease-in-out;
+    background-color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+/* Why */
 #why .fa, .far, .fas {
     color: rgb(155, 36, 36);
     margin: 20px 0;
 }
+/* Customer */
 #customer .carousel-indicators {
     top: 5rem;
 }
 #customer .carousel-indicators li {
     background-color: rgb(155, 36, 36);
 }
+/* Pricing */
 #pricing .card-header {
     background-color: rgba(21, 31, 33, 0.8);
     color: #fff;
@@ -97,10 +124,12 @@ a {
 #pricing .card-header {
     background-color: rgb(155, 36, 36);
 }
+/* Footer */
 footer {
     background-color: #484848;
     color: #fff;
     padding: 1.5rem 0;
+    overflow: hidden;
 }
 footer .fab {
    font-size: 1.2rem;
@@ -113,6 +142,10 @@ footer .fas, .far {
 footer .list-inline a{
     color: #fff;
 }
+.blockquote-footer {
+    background-color: #fff;
+}
+/* Media */
 @media(max-width: 768px) {
     #header, #connect, #who {
         text-align: center;
