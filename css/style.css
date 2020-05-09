@@ -67,6 +67,7 @@ a {
 #who, #why, #pricing {
     background: #d1d1d13a;
     padding: 5rem 0;
+    overflow: hidden;
 }
 #connect, #customer, #contact {
     padding: 5rem 0;
@@ -111,7 +112,7 @@ a {
 }
 /* Customer */
 #customer .carousel-indicators {
-    top: 5rem;
+    top: 8rem;
 }
 #customer .carousel-indicators li {
     background-color: rgb(155, 36, 36);
